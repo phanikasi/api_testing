@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4290" started-at="2020-01-03T23:04:28 IST" finished-at="2020-01-03T23:04:33 IST">
+  <suite name="Default suite" duration-ms="2277" started-at="2020-01-03T23:31:04 IST" finished-at="2020-01-03T23:31:07 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4290" started-at="2020-01-03T23:04:28 IST" finished-at="2020-01-03T23:04:33 IST">
-      <class name="api_testing.TC03_gmap">
-        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC03_gmap@a7e666]" name="googleMapTest" duration-ms="4250" started-at="2020-01-03T23:04:28 IST" finished-at="2020-01-03T23:04:33 IST">
+    <test name="Default test" duration-ms="2277" started-at="2020-01-03T23:31:04 IST" finished-at="2020-01-03T23:31:07 IST">
+      <class name="api_testing.TC04_gmap_headers">
+        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC04_gmap_headers@a7e666]" name="googleMapTest" duration-ms="2247" started-at="2020-01-03T23:31:04 IST" finished-at="2020-01-03T23:31:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleMapTest -->
-      </class> <!-- api_testing.TC03_gmap -->
+      </class> <!-- api_testing.TC04_gmap_headers -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
