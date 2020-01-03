@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2836" started-at="2020-01-03T22:35:24 IST" finished-at="2020-01-03T22:35:27 IST">
+  <suite name="Default suite" duration-ms="4290" started-at="2020-01-03T23:04:28 IST" finished-at="2020-01-03T23:04:33 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2836" started-at="2020-01-03T22:35:24 IST" finished-at="2020-01-03T22:35:27 IST">
-      <class name="api_testing.TC02_post">
-        <test-method status="PASS" signature="RegistrationSuccessful()[pri:0, instance:api_testing.TC02_post@a7e666]" name="RegistrationSuccessful" duration-ms="2807" started-at="2020-01-03T22:35:24 IST" finished-at="2020-01-03T22:35:27 IST">
+    <test name="Default test" duration-ms="4290" started-at="2020-01-03T23:04:28 IST" finished-at="2020-01-03T23:04:33 IST">
+      <class name="api_testing.TC03_gmap">
+        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC03_gmap@a7e666]" name="googleMapTest" duration-ms="4250" started-at="2020-01-03T23:04:28 IST" finished-at="2020-01-03T23:04:33 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegistrationSuccessful -->
-      </class> <!-- api_testing.TC02_post -->
+        </test-method> <!-- googleMapTest -->
+      </class> <!-- api_testing.TC03_gmap -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
