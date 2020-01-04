@@ -1,17 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2176" started-at="2020-01-03T23:48:34 IST" finished-at="2020-01-03T23:48:37 IST">
+  <suite name="VerizonRestApiSuite" duration-ms="6112" started-at="2020-01-04T18:12:47 IST" finished-at="2020-01-04T18:12:54 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2176" started-at="2020-01-03T23:48:34 IST" finished-at="2020-01-03T23:48:37 IST">
+    <test name="VerizonRestApiSuite" duration-ms="6112" started-at="2020-01-04T18:12:47 IST" finished-at="2020-01-04T18:12:54 IST">
+      <class name="api_testing.TC01_get">
+        <test-method status="PASS" signature="setup()[pri:0, instance:api_testing.TC01_get@48503868]" name="setup" is-config="true" duration-ms="39" started-at="2020-01-04T18:12:48 IST" finished-at="2020-01-04T18:12:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getWeatherDetails()[pri:0, instance:api_testing.TC01_get@48503868]" name="getWeatherDetails" duration-ms="2093" started-at="2020-01-04T18:12:48 IST" finished-at="2020-01-04T18:12:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherDetails -->
+        <test-method status="PASS" signature="getVerizon()[pri:1, instance:api_testing.TC01_get@48503868]" name="getVerizon" duration-ms="634" started-at="2020-01-04T18:12:50 IST" finished-at="2020-01-04T18:12:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVerizon -->
+      </class> <!-- api_testing.TC01_get -->
+      <class name="api_testing.TC03_gmap">
+        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC03_gmap@184f6be2]" name="googleMapTest" duration-ms="802" started-at="2020-01-04T18:12:51 IST" finished-at="2020-01-04T18:12:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleMapTest -->
+      </class> <!-- api_testing.TC03_gmap -->
       <class name="api_testing.TC05_resbody">
-        <test-method status="PASS" signature="getWeatherDetails()[pri:0, instance:api_testing.TC05_resbody@a7e666]" name="getWeatherDetails" duration-ms="2146" started-at="2020-01-03T23:48:34 IST" finished-at="2020-01-03T23:48:37 IST">
+        <test-method status="PASS" signature="getWeatherDetails()[pri:0, instance:api_testing.TC05_resbody@1f7030a6]" name="getWeatherDetails" duration-ms="1171" started-at="2020-01-04T18:12:52 IST" finished-at="2020-01-04T18:12:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWeatherDetails -->
       </class> <!-- api_testing.TC05_resbody -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="api_testing.TC04_gmap_headers">
+        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC04_gmap_headers@56aac163]" name="googleMapTest" duration-ms="440" started-at="2020-01-04T18:12:52 IST" finished-at="2020-01-04T18:12:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleMapTest -->
+      </class> <!-- api_testing.TC04_gmap_headers -->
+      <class name="api_testing.TC02_post">
+        <test-method status="FAIL" signature="RegistrationSuccessful()[pri:0, instance:api_testing.TC02_post@6895a785]" name="RegistrationSuccessful" duration-ms="709" started-at="2020-01-04T18:12:50 IST" finished-at="2020-01-04T18:12:51 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [201] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [201] but found [200]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at api_testing.TC02_post.RegistrationSuccessful(TC02_post.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegistrationSuccessful -->
+      </class> <!-- api_testing.TC02_post -->
+    </test> <!-- VerizonRestApiSuite -->
+  </suite> <!-- VerizonRestApiSuite -->
 </testng-results>

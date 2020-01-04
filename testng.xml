@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="VerizonRestApiSuite">
+<listeners>
+	<listener class-name="global.Listeners" />
+</listeners>
+	<test name="VerizonRestApiSuite">
+		<classes>
+			<class name="api_testing.TC01_get" />
+			<class name="api_testing.TC02_post" />
+			<class name="api_testing.TC03_gmap" />
+			<class name="api_testing.TC04_gmap_headers" />
+			<class name="api_testing.TC05_resbody" />
+		</classes>
+	</test>
+</suite> 
