@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="VerizonRestApiSuite" duration-ms="6112" started-at="2020-01-04T18:12:47 IST" finished-at="2020-01-04T18:12:54 IST">
+  <suite name="VerizonRestApiSuite" duration-ms="8420" started-at="2020-01-04T21:38:54 IST" finished-at="2020-01-04T21:39:03 IST">
     <groups>
     </groups>
-    <test name="VerizonRestApiSuite" duration-ms="6112" started-at="2020-01-04T18:12:47 IST" finished-at="2020-01-04T18:12:54 IST">
+    <test name="VerizonRestApiSuite" duration-ms="8420" started-at="2020-01-04T21:38:54 IST" finished-at="2020-01-04T21:39:03 IST">
       <class name="api_testing.TC01_get">
-        <test-method status="PASS" signature="setup()[pri:0, instance:api_testing.TC01_get@48503868]" name="setup" is-config="true" duration-ms="39" started-at="2020-01-04T18:12:48 IST" finished-at="2020-01-04T18:12:48 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:api_testing.TC01_get@48503868]" name="setup" is-config="true" duration-ms="37" started-at="2020-01-04T21:38:55 IST" finished-at="2020-01-04T21:38:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getWeatherDetails()[pri:0, instance:api_testing.TC01_get@48503868]" name="getWeatherDetails" duration-ms="2093" started-at="2020-01-04T18:12:48 IST" finished-at="2020-01-04T18:12:50 IST">
+        <test-method status="PASS" signature="getWeatherDetails()[pri:0, instance:api_testing.TC01_get@48503868]" name="getWeatherDetails" duration-ms="3622" started-at="2020-01-04T21:38:55 IST" finished-at="2020-01-04T21:38:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWeatherDetails -->
-        <test-method status="PASS" signature="getVerizon()[pri:1, instance:api_testing.TC01_get@48503868]" name="getVerizon" duration-ms="634" started-at="2020-01-04T18:12:50 IST" finished-at="2020-01-04T18:12:50 IST">
+        <test-method status="PASS" signature="getVerizon()[pri:1, instance:api_testing.TC01_get@48503868]" name="getVerizon" duration-ms="755" started-at="2020-01-04T21:38:58 IST" finished-at="2020-01-04T21:38:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getVerizon -->
       </class> <!-- api_testing.TC01_get -->
       <class name="api_testing.TC03_gmap">
-        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC03_gmap@184f6be2]" name="googleMapTest" duration-ms="802" started-at="2020-01-04T18:12:51 IST" finished-at="2020-01-04T18:12:52 IST">
+        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC03_gmap@184f6be2]" name="googleMapTest" duration-ms="592" started-at="2020-01-04T21:39:00 IST" finished-at="2020-01-04T21:39:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleMapTest -->
       </class> <!-- api_testing.TC03_gmap -->
       <class name="api_testing.TC05_resbody">
-        <test-method status="PASS" signature="getWeatherDetails()[pri:0, instance:api_testing.TC05_resbody@1f7030a6]" name="getWeatherDetails" duration-ms="1171" started-at="2020-01-04T18:12:52 IST" finished-at="2020-01-04T18:12:54 IST">
+        <test-method status="PASS" signature="getWeatherDetails()[pri:0, instance:api_testing.TC05_resbody@1f7030a6]" name="getWeatherDetails" duration-ms="1819" started-at="2020-01-04T21:39:01 IST" finished-at="2020-01-04T21:39:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWeatherDetails -->
       </class> <!-- api_testing.TC05_resbody -->
       <class name="api_testing.TC04_gmap_headers">
-        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC04_gmap_headers@56aac163]" name="googleMapTest" duration-ms="440" started-at="2020-01-04T18:12:52 IST" finished-at="2020-01-04T18:12:52 IST">
+        <test-method status="PASS" signature="googleMapTest()[pri:0, instance:api_testing.TC04_gmap_headers@56aac163]" name="googleMapTest" duration-ms="324" started-at="2020-01-04T21:39:01 IST" finished-at="2020-01-04T21:39:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleMapTest -->
       </class> <!-- api_testing.TC04_gmap_headers -->
       <class name="api_testing.TC02_post">
-        <test-method status="FAIL" signature="RegistrationSuccessful()[pri:0, instance:api_testing.TC02_post@6895a785]" name="RegistrationSuccessful" duration-ms="709" started-at="2020-01-04T18:12:50 IST" finished-at="2020-01-04T18:12:51 IST">
+        <test-method status="FAIL" signature="RegistrationSuccessful()[pri:0, instance:api_testing.TC02_post@6895a785]" name="RegistrationSuccessful" duration-ms="787" started-at="2020-01-04T21:38:59 IST" finished-at="2020-01-04T21:39:00 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [201] but found [200]]]>
