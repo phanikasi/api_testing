@@ -11,6 +11,17 @@
           <include name="RegistrationSuccessful"/>
         </methods>
       </class> <!-- api_testing.TC02_post -->
+      <class name="api_testing.Crud_operations">
+        <methods>
+          <include name="get_weather"/>
+        </methods>
+      </class> <!-- api_testing.Crud_operations -->
+      <class name="api_testing.TC01_get">
+        <methods>
+          <include name="setup"/>
+          <include name="simple_get_test"/>
+        </methods>
+      </class> <!-- api_testing.TC01_get -->
     </classes>
   </test> <!-- VerizonRestApiSuite(failed) -->
 </suite> <!-- Failed suite [VerizonRestApiSuite] -->

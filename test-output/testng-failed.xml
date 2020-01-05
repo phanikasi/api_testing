@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [VerizonRestApiSuite]">
-  <listeners>
-    <listener class-name="global.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="VerizonRestApiSuite(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api_testing.TC02_post">
+      <class name="api_testing.Crud_operations">
         <methods>
-          <include name="RegistrationSuccessful"/>
+          <include name="delete_data"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- api_testing.TC02_post -->
+      </class> <!-- api_testing.Crud_operations -->
     </classes>
-  </test> <!-- VerizonRestApiSuite(failed) -->
-</suite> <!-- Failed suite [VerizonRestApiSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

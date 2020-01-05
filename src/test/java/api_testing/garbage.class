@@ -1,0 +1,8 @@
+//		then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().
+//		body("City", equalTo("Chennai"));
+//		logger.info("Statuscode is verified");
+//		Response response = get(ROOT_URI + "/Chennai");
+//		JsonPath jp = new JsonPath(response.asString());
+//		logger.info(response.asString());
+//		String value = jp.get("City").toString();
+//		Assert.assertEquals(value,"Chennai");
