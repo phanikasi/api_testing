@@ -3,6 +3,7 @@ import static io.restassured.RestAssured.delete;
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItems;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import java.util.HashMap;
 
@@ -33,51 +34,54 @@ public class Crud_operations extends Base {
 		Response response = given()
 		.param("page",1)
 		.when()
-		.get(ROOT_URI +"/api/user");
+		.get(ROOT_URI +"/api/user")
+		.then()
+		.body (matchesJsonSchemaInClasspath("json-schema.json"))
+		.extract().response();
 		logger.info("REsponse_body:"+ response.body().prettyPrint());
 	}
-	@Test
-	public void post_data() {
-		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
-		JSONObject json1 = new JSONObject(); 
-	    json1.put("name","kasirao");
-	    json1.put("salary",21000); 
-	    json1.put("age",55);  
-		Response res = given()
-		.body(json1.toString())
-		.when()
-		.post("/create")
-		.then().statusCode(200)
-		.extract().response();
-		logger.info("Response_body is:"+ res.asString());	
-		logger.info("user created successfully"+json1.toJSONString());
-	}
-	
-	@Test
-	public void delete_data() {
-	RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
-		Response res = given()
-		.when()
-		.delete("/delete/59586")
-		.then().statusCode(200)
-		.extract().response();
-		logger.info("Delete_Response_body:"+ res.asString());
-	}
-	
-	@Test
-	public void put_data() {
-	RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
-	JSONObject json1 = new JSONObject(); 
-    json1.put("name","kprphani");
-    json1.put("salary",38000); 
-    json1.put("age",30);  
-		Response res = given()
-		.when()
-		.body(json1)
-		.put("/update/59721")
-		.then().statusCode(200)
-		.extract().response();
-		logger.info("update_Response_body:"+ res.asString());
-	}
+//	@Test
+//	public void post_data() {
+//		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
+//		JSONObject json1 = new JSONObject(); 
+//	    json1.put("name","kasirao");
+//	    json1.put("salary",21000); 
+//	    json1.put("age",55);  
+//		Response res = given()
+//		.body(json1.toString())
+//		.when()
+//		.post("/create")
+//		.then().statusCode(200)
+//		.extract().response();
+//		logger.info("Response_body is:"+ res.asString());	
+//		logger.info("user created successfully"+json1.toJSONString());
+//	}
+//	
+//	@Test
+//	public void delete_data() {
+//	RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
+//		Response res = given()
+//		.when()
+//		.delete("/delete/59586")
+//		.then().statusCode(200)
+//		.extract().response();
+//		logger.info("Delete_Response_body:"+ res.asString());
+//	}
+//	
+//	@Test
+//	public void put_data() {
+//	RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
+//	JSONObject json1 = new JSONObject(); 
+//    json1.put("name","kprphani");
+//    json1.put("salary",38000); 
+//    json1.put("age",30);  
+//		Response res = given()
+//		.when()
+//		.body(json1)
+//		.put("/update/59721")
+//		.then().statusCode(200)
+//		.extract().response();
+//		logger.info("update_Response_body:"+ res.asString());
+//	}
 
 }
